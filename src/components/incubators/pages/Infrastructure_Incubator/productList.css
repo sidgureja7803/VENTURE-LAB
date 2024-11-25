@@ -1,0 +1,622 @@
+.infrastructure-incubator {
+    padding: 20px;
+}
+
+.incubator-people-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.h4 {
+    margin: 0;
+}
+
+.addButton {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.editInfoButton {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.editInfoDropdown {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.modalContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 9999;
+    width: 80%;
+    max-width: 500px;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContent input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.saveButton,
+.cancelButton {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tableContainer {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #8a2be2;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.actionButtons {
+    display: flex;
+    align-items: center;
+}
+
+.editButton,
+.deleteButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.editButton {
+    color: black;
+    margin-right: 5px;
+}
+
+.deleteButton {
+    color: red;
+}
+
+.iconSpacing {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.infrastructure-incubator {
+    padding: 20px;
+}
+
+.incubator-people-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* Reduced margin to bring button closer to heading */
+}
+
+.h4 {
+    margin: 0;
+}
+
+.addButton {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.editInfoButton {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.editInfoDropdown {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.modalContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 9999;
+    width: 80%;
+    max-width: 500px;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContent input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.saveButton,
+.cancelButton {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tableContainer {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #8a2be2;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.actionButtons {
+    display: flex;
+    align-items: center;
+}
+
+.editButton,
+.deleteButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.editButton {
+    color: black;
+    margin-right: 5px;
+}
+
+.deleteButton {
+    color: red;
+}
+
+.iconSpacing {
+    margin-right: 5px;
+}
+
+
+.infrastructure-incubator {
+    padding: 20px;
+}
+
+.incubator-people-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.h4 {
+    margin: 0;
+}
+
+.addButton {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.editInfoContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Added margin to separate from table */
+}
+
+.editInfoButton {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.editInfoDropdown {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.modalContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 9999;
+    width: 80%;
+    max-width: 500px;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContent input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.saveButton,
+.cancelButton {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tableContainer {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #8a2be2;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.actionButtons {
+    display: flex;
+    align-items: center;
+}
+
+.editButton,
+.deleteButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.editButton {
+    color: black;
+    margin-right: 5px;
+}
+
+.deleteButton {
+    color: red;
+}
+
+.iconSpacing {
+    margin-right: 5px;
+}
+
+
+
+
+.infrastructure-info-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Add margin-bottom for spacing */
+    
+}
+
+.addContainer {
+    display: flex;   
+    align-items: center;
+}
+
+.addButton {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+
+.page-container {
+    padding: 0;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-container {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.dashboard-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content-container {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.table-container {
+    flex: 1;
+    overflow: auto;
+    width: 100%;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.title-container h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.add-info-button {
+    background: linear-gradient(to right, #E91E63, #9C27B0);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.2s;
+}
+
+.add-info-button:hover {
+    opacity: 0.9;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.custom-table th {
+    background-color: #9c27b0;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.custom-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.custom-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button svg {
+    font-size: 20px;
+    color: #666;
+}
+
+.icon-button.delete svg {
+    color: #dc3545;
+}
+
+/* Modal styles */
+.modalContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modalContent input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modalButtons button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.saveButton {
+    background: linear-gradient(to right, #E91E63, #9C27B0);
+    color: white;
+    border: none;
+}
+
+.cancelButton {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+}

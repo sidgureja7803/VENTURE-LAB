@@ -1,0 +1,748 @@
+/* .userList {
+  flex: 4;
+}
+
+.userListUser {
+  display: flex;
+  align-items: center;
+}
+
+.userListImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.userListEdit {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: #3bb077;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.userListEdit:hover {
+  background-color: #2e8b57;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userListDelete {
+  color: #d32f2f;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s ease-out;
+}
+
+.userListDelete:hover {
+  color: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 9999;
+  width: 250px;
+  Reduced width
+  max-height: 200px;
+  Reduced height */
+  /* overflow-y: auto; */
+  /* Enable vertical scrolling if needed */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* Add a subtle shadow */
+/* }
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.modal button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+/* .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  width: 300px;
+  /* Increased width for better visibility */
+  /* max-height: 300px; */
+  /* Increased height for better visibility */
+  /* overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+/* .modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* .modal button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+} 
+
+.modal button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userList {
+  flex: 4;
+}
+
+.userListUser {
+  display: flex;
+  align-items: center;
+}
+
+.userListImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.userListEdit {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: #3bb077;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.userListEdit:hover {
+  background-color: #2e8b57;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userListDelete {
+  color: #d32f2f;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s ease-out;
+}
+
+.userListDelete:hover {
+  color: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.modal button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* userList.css */
+/* .modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.modal button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}     */
+
+/* userList.css */
+
+/* .modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.modal button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+
+/* userList.css */
+
+/* .userList {
+  padding: 20px;
+}
+
+.userList .modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userList .modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userList .modal.show {
+  display: block;
+}
+
+.userList .modal button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.userList .modal button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userList .modal input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.userList .modal input[type="file"] {
+  padding: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+} */
+
+
+/* .userList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw; */
+  /* Use 100vw to set the width to the full viewport width */
+  /* height: 100vh; */
+  /* Use 100vh to set the height to the full viewport height */
+  /* padding: 20px; */
+  /* Add padding to the awards page content */
+  /* box-sizing: border-box; */
+  /* Use border-box to include padding and border in the element's total width and height */
+/* } */
+
+/* .userList .dataGridContainer {
+  width: 100%;
+  max-width: 100%;
+  align-items: center; */
+  /* Ensure the DataGrid takes up the full width */
+  /* height: calc(100% - 20px); */
+  /* Subtract padding from the height */
+/* }
+
+.userList .modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  width: 80%; */
+  /* Adjust the width of the modal as needed */
+  /* max-width: 500px; */
+  /* Set a maximum width for the modal */
+  /* max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; */
+  /* Use border-box for modal as well */
+/* } */
+
+/* .userList .modal .modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userList .modal.show {
+  display: block;
+} */
+
+/* Your existing CSS for buttons, icons, etc. */
+
+/* .userList .userListEdit {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: #3bb077;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+} */
+
+/* Your existing CSS for buttons, icons, etc. */
+
+/* .userList .userListDelete {
+  color: #d32f2f;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s ease-out;
+} */
+
+/* .userList .userListDelete:hover {
+  color: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userList .modal button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.userList .modal button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+
+/* .userList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw; */
+  /* Set width to full viewport width */
+  /* height: 100vh; */
+  /* Set height to full viewport height */
+  /* padding: 20px; */
+  /* Add padding to the awards page content */
+  /* box-sizing: border-box; */
+  /* Include padding and border in the element's total width and height */
+/* } */
+
+/* .userList .dataGridContainer {
+  width: 100%;
+  max-width: 100%;
+  align-items: center; */
+  /* Ensure the DataGrid takes up the full width */
+/* } */
+
+/* .userList .modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  width: 80%; */
+  /* Adjust the width of the modal as needed */
+  /* max-width: 500px; */
+  /* Set a maximum width for the modal */
+  /* max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; */
+  /* Use border-box for modal as well */
+/* } */
+
+/* .userList .modal .modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userList .modal.show {
+  display: block;
+} */
+
+/* Your existing CSS for buttons, icons, etc. */
+
+/* .userList .userListEdit {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: #3bb077;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+} */
+
+/* Your existing CSS for buttons, icons, etc. */
+
+/* .userList .userListDelete {
+  color: #d32f2f;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s ease-out;
+} */
+
+/* .userList .userListDelete:hover {
+  color: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+/* .userList .modal button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.userList .modal button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  width: 80%;
+  max-width: 500px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+} */
+
+/* .modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal.show {
+  display: block;
+} */
+
+/* 
+.userList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 20px;
+} */
+
+/* .modal {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  width: 80%;
+  max-width: 500px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+} */
+  
+
+.award-container{
+  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* Take up the full height of the viewport */
+    padding: 20px;
+  padding: 20px;
+    width: 100%;
+    /* Ensure the container takes full width */
+    box-sizing: border-box;
+    background-color: RGB(230, 240, 255);
+    /* Include padding and border in the element's total width and height */
+
+}
+
+.award {
+  flex: 4;
+}
+
+.awardUser {
+  display: flex;
+  align-items: center;
+}
+
+.awardImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.awardEdit {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #3bb077;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.awardDelete {
+  color: red;
+  cursor: pointer;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  width: 80%;
+  max-width: 500px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal.show {
+  display: block;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th,
+.table td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

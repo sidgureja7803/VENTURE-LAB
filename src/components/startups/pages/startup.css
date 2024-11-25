@@ -1,0 +1,198 @@
+/* index.css */
+
+/* Reset styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Page container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.broad-container {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.add-edit-top-right-button {
+    /* background: linear-gradient(135deg, #ff69b4, #800080); */
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.top-left-heading {
+    display: inline-block;
+}
+
+.centre-card {
+    flex-basis: auto;
+    /* Adjusted to fit 4 cards in a row */
+    background-color: #daddfb;
+    /* Light bluish background */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    /* Increased padding for better spacing */
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Added box shadow for depth */
+    width: 100%;
+    position: relative;
+    top: 30px;
+    /* flex: 1;
+  display: flex;
+  flex-direction: column; */
+}
+
+.centre-card buttons {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+}
+
+
+.edit-button-people {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    max-width: 60px;
+    gap: 20px;
+    /* position: fixed; */
+    position: relative;
+    left: 27%;
+
+}
+
+.card-button {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    max-width: 60px;
+    gap: 20px;
+}
+
+
+.delete-button-people {
+    position: relative;
+    left: 31%;
+}
+
+.profile-image {
+    left: 20px;
+    /* Adjust the left position to your preference */
+    /* left: 50%; */
+    /* transform: translateY(-70%); */
+
+    width: 150px;
+    /* Increase the width of the image */
+    height: 200px;
+    /* Increase the height of the image */
+    border-radius: 15px;
+    /* Add roundish edges by increasing the border-radius */
+    overflow: hidden;
+    object-fit: contain;
+
+
+}
+
+
+.inner-left-div {
+    padding-left: 20px;
+    /* Adjust padding to create space for the image */
+    gap: 8px;
+    width: 40%;
+    float: left;
+    /* Space between fields */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-right-div {
+    padding-left: 20px;
+    /* Adjust padding as needed */
+    /* flex-direction: column; */
+    gap: 8px;
+    left: 60%;
+    width: 20%;
+    /* position: relative; */
+    margin-left: 65%;
+    /* Space between fields */
+}
+
+
+
+/* For Partners */
+
+.edit-button {
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    max-width: 60px;
+    gap: 20px;
+    /* position: fixed; */
+    position: relative;
+    left: 65%;
+
+}
+
+
+.delete-button {
+    position: relative;
+    left: 72%;
+}
+
+
+.add-edit-top-right-button-partner {
+    /* background: linear-gradient(135deg, #ff69b4, #800080); */
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+    left: -10%;
+}
+
+
+
+
+
+
+
+
+
+

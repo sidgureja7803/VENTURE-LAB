@@ -1,0 +1,23 @@
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+    font-size: 14px;
+    color: #555;
+}
+
+.header-right {
+    display: flex;
+    gap: 30px;
+    /* Adjust the spacing between links */
+}
+

@@ -1,0 +1,89 @@
+
+ .widgetLg {
+   flex: 2;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+   max-width: 50%;
+   margin-left: auto;
+   /* Shift the component to the right */
+ }
+
+ .widgetLgTitle {
+   font-size: 24px;
+   font-weight: normal;
+   margin-bottom: 20px;
+   color: #333;
+   border-bottom: 2px solid #ff7f50;
+   padding-bottom: 10px;
+ }
+
+ .founderList {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+ }
+
+ .founderItem {
+   background-color:#daddfb;
+  /* background-color: (218, 221, 251, 1); */
+   /* Light bluish background color */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* Center align content */
+ }
+
+ .founderItem:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ }
+
+ .founderImg {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   margin-bottom: 10px;
+   object-fit: cover;
+ }
+
+ .founderDetails {
+   text-align: center;
+ }
+
+ .founderName {
+   font-weight: 600;
+   margin-bottom: 5px;
+   color: #333;
+ }
+
+ .founderRoles {
+   font-size: 14px;
+   color: #666;
+ }
+
+ .founderSocialLinks {
+   display: flex;
+   gap: 10px;
+   margin-top: 10px;
+ }
+
+ .founderSocialLinks a {
+   color: #808080;
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+
+ .founderSocialLinks a:hover {
+   color: #555;
+ }
+
+
+
+
+ 

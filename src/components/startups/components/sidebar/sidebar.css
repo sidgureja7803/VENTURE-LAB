@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  flex: 0 0 280px; /* Fixed width */
+  height: 100vh; /* Full height */
+  background: #f7f7f7; /* Background color */
+  position: sticky; /* Fixed position */
+  top: 0; /* Align with top */
+  left: 0; /* Align to left edge */
+  overflow-y: auto; /* Scrollable */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.sidebarWrapper {
+  padding: 25px 20px;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarListItem {
+  padding: 14px 18px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  color: #333; /* Text color */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background: rgba(0, 211, 149, 0.15); /* Active and hover background */
+  color: #00D395; /* Active text color */
+  transform: translateX(5px);
+}
+
+.sidebarIcon {
+  margin-right: 12px;
+  font-size: 20px !important;
+  color: rgba(0, 0, 0, 0.6); /* Icon color */
+  transition: all 0.3s ease;
+}
+
+.sidebarListItem.active .sidebarIcon,
+.sidebarListItem:hover .sidebarIcon {
+  color: #00D395; /* Icon color on active and hover */
+}
+
+.sidebarTitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5); /* Title color */
+  margin: 20px 0 15px;
+  padding-left: 18px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+.logoutItem {
+  margin-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+}
+
+.sidebarListItem.active {
+  background: rgba(0, 211, 149, 0.15);
+  border-left: 4px solid #00D395;
+  padding-left: 12px;
+}
+
+.sidebarListItem:hover {
+  padding-left: 20px; /* Slightly increase padding on hover */
+}
+
+.sidebarListItem::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00D395;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebarListItem:hover::after,
+.sidebarListItem.active::after {
+  opacity: 1;
+}
+
+.sidebarListItem {
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebarListItem:hover {
+  padding-left: 20px;
+}
+
+.content-wrapper {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.form-group, 
+.text-content {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+input, 
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 240px;
+  }
+  
+  .main-content {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+  }
+}
+
+.detail-section {
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.detail-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.detail-label {
+  width: 200px;
+  font-weight: 500;
+  color: #666;
+}
+
+.detail-value {
+  flex: 1;
+  color: #333;
+}
+
+.detail-value {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.startup-details,
+.registration {
+  margin-bottom: 40px;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #00D395;
+}
+
+/* Add these styles to your CSS file */
+
+/* Partners Section */
+.partners-section {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Partner Card */
+.partner-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Partner Details */
+.partner-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Partner Info Row */
+.partner-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+/* Partner Info Labels */
+.partner-info-label {
+  min-width: 100px;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Partner Info Values */
+.partner-info-value {
+  flex: 1;
+  color: #333;
+  word-break: break-all; /* This ensures long text wraps properly */
+  overflow-wrap: break-word;
+}
+
+/* Contact Icons */
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #666;
+}
+
+/* Email and Phone Container */
+.contact-info {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.contact-info span {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  max-width: calc(100% - 30px); /* Account for icon width */
+}

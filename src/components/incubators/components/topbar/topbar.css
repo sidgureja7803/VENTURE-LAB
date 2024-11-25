@@ -1,0 +1,176 @@
+.topbar {
+  background: #DADDFB;
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+.topbarWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 25px;
+}
+
+.topLeft {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a237e;
+  letter-spacing: 0.5px;
+}
+
+.topMiddle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar {
+  background: #f5f7ff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  width: 400px;
+  border: 1px solid rgba(26, 35, 126, 0.1);
+  transition: all 0.3s ease;
+}
+
+.searchBar:focus-within {
+  box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.1);
+  border-color: #1a237e;
+}
+
+.searchIcon {
+  color: #1a237e;
+  opacity: 0.6;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 12px;
+  font-size: 14px;
+  width: 100%;
+  color: #1a237e;
+}
+
+.searchInput::placeholder {
+  color: rgba(26, 35, 126, 0.5);
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  background: #f5f7ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.userProfile:hover {
+  background: #e8eaff;
+}
+
+.userName {
+  font-weight: 500;
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.topAvatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.iconsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.settingsIcon,
+.notificationsIcon {
+  color: #1a237e;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.settingsIcon:hover,
+.notificationsIcon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.pageTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a237e;
+  margin: 0 20px;
+}
+
+.dashboardTitle {
+  font-weight: 600;
+  color: #1a237e;
+  font-size: 18px;
+}
+.topLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.breadcrumb {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.page-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.breadcrumb-section {
+  margin-left: 40px;
+}

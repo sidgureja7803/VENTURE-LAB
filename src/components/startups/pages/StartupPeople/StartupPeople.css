@@ -1,0 +1,214 @@
+.broad-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .top-left-heading {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .add-person-button {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #ff0077, #6600ff);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .add-person-button:hover {
+    background: linear-gradient(to right, #6600ff, #ff0077);
+    transform: translateY(-2px);
+  }
+  
+  .add-person-button svg {
+    margin-right: 8px;
+  }
+  
+  .modal-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  .input-row {
+    margin-bottom: 15px;
+  }
+  
+  .input-row input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .modal-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-buttons button:first-child {
+    background-color: #6600ff;
+    color: #fff;
+  }
+  
+  .modal-buttons button:last-child {
+    background-color: #ff0077;
+    color: #fff;
+  }
+  
+  .modal-buttons button:hover {
+    opacity: 0.9;
+  }
+  
+  .person-card {
+    display: flex;
+    background-color: #DADDFB;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .person-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .person-details {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .person-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .person-field strong {
+    margin-right: 5px;
+    color: #555;
+  }
+  
+  .person-field svg {
+    margin-right: 8px;
+    color: #6600ff;
+  }
+  
+  .person-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dummy-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .card-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button-people {
+    color: #6600ff;
+  }
+  
+  .delete-button-people {
+    color: #ff0077;
+  }
+  
+  .card-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .person-card {
+      flex-direction: column;
+    }
+  
+    .person-details {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  
+    .person-actions {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+  }
+  .error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+  }
+  
+  .input-row {
+    margin-bottom: 16px;
+  }
+
+
+  .dummy-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .person-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }

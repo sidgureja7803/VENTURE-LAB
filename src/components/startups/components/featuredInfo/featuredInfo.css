@@ -1,0 +1,86 @@
+.featured {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.featuredItem {
+    max-width: 200px;
+    /* Each card occupies 25% of the container width with margin */
+    height: 180px;
+    /* Fixed height for consistency */
+    margin-right: 20px;
+    /* Add some space between cards */
+    background-color: #fff;
+    border-radius: 10px;
+    /* padding: 20px; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* .featuredItem:last-child {
+    margin-right: 0; */
+    /* Remove margin from the last card to prevent overflow */
+/* } */
+
+.featuredItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f7ff;
+}
+
+.featuredTitle {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.featuredMoneyContainer {
+    margin: 10px 0;
+}
+
+.featuredMoney {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.featuredSub {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.iconContainer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #cb0c9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconContainer svg {
+    font-size: 24px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .featuredItem {
+        width: calc(50% - 20px);
+        /* Adjust width for smaller screens */
+    }
+}
+
+
+

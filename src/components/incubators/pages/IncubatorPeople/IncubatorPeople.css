@@ -1,0 +1,657 @@
+
+.incubator-people-container {
+    width: 100%;
+}
+
+.dummy-image {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    /* Adjust the left position to your preference */
+    /* left: 50%; */
+    transform: translateY(-70%);
+
+    width: 100px;
+    /* Increase the width of the image */
+    height: 100px;
+    /* Increase the height of the image */
+    border-radius: 15px;
+    /* Add roundish edges by increasing the border-radius */
+    overflow: hidden;
+}
+
+.person-actions img {
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    /* Add transition effect */
+}
+
+.person-actions img:hover {
+    filter: brightness(1.2);
+    /* Adjust brightness on hover for the pinkish to purplish effect */
+}
+
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popup-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-button.add {
+    background-color: #9b59b6;
+    /* Purplish color */
+}
+
+.popup-button.cancel {
+    background-color: #e91e63;
+    /* Pinkish color */
+}
+
+.popup-button.add:hover {
+    background-color: #8e44ad;
+    /* Darker purplish color on hover */
+}
+
+.popup-button.cancel:hover {
+    background-color: #c2185b;
+    /* Darker pinkish color on hover */
+}
+
+
+
+
+
+
+
+
+
+.incubator-people-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    /* Light background for better contrast */
+}
+
+.person-card {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    border: 1px solid #ccc;
+    background-color: #E5E7FD;
+    /* White background for cards */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+
+
+.person-details {
+    flex: 1;
+    padding-left: 140px;
+    /* Adjust padding to create space for the image */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* Space between fields */
+}
+
+.person-details {
+    padding-left: 20px;
+    /* Adjust padding as needed */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* Space between fields */
+}
+
+.dummy-image {
+    position: absolute;
+    top: 40px;
+    /* Adjusted position */
+    left: 20px;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: contain;
+    /* Rounded edges */
+    overflow: hidden;
+
+
+}
+
+
+
+.person-field {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    /* Consistent font size */
+}
+
+.person-field strong {
+    margin-right: 5px;
+}
+
+.person-actions {
+    position: relative;
+
+    top: 100px;
+    /* Position buttons below the image */
+    left: -160px;
+    display: flex;
+    gap: 20px;
+
+    /* Ensure the buttons are displayed in a row */
+}
+
+.person-actions button {
+    background: linear-gradient(to right, #ff0077, #6600ff);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    position: relative;
+    left: 40px;
+
+
+
+    /* Ensure buttons are square */
+    height: 50px;
+    /* Ensure buttons are square */
+    border-radius: 5px;
+    transition: background 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-actions button:hover {
+    background: linear-gradient(to right, #6600ff, #ff0077);
+}
+
+
+
+.add-person-button:hover {
+    background: linear-gradient(to right, #6600ff, #ff0077);
+
+}
+
+.modal-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-row {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popup-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-button.add {
+    background-color: #9b59b6;
+}
+
+.popup-button.cancel {
+    background-color: #e91e63;
+}
+
+.popup-button.add:hover {
+    background-color: #8e44ad;
+}
+
+.popup-button.cancel:hover {
+    background-color: #c2185b;
+}
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-left {
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-right {
+    display: flex;
+    gap: 10px;
+    /* Adjust the spacing between links */
+}
+
+.footer-link {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+.incubator-people-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    /* Light background for better contrast */
+}
+
+.person-card {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #E5E7FD;
+    /* White background for cards */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+
+
+.dummy-image {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    /* Adjust the left position to your preference */
+    /* left: 50%; */
+    transform: translateY(-70%);
+
+    width: 150px;
+    /* Increase the width of the image */
+    height: 200px;
+    /* Increase the height of the image */
+    border-radius: 10px;
+    /* Add roundish edges by increasing the border-radius */
+    overflow: hidden;
+}
+
+.person-details {
+    flex: 1;
+    /* padding-left: 140px; */
+    /* Adjust padding to create space for the image */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* Space between fields */
+}
+
+.person-field {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    /* Consistent font size */
+}
+
+.person-field strong {
+    margin-right: 5px;
+}
+
+.person-actions {
+    position: absolute;
+    top: 130px;
+    /* Position buttons below the image */
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    /* Ensure the buttons are displayed in a row */
+}
+
+.person-actions button {
+    background: linear-gradient(to right, #ff0077, #6600ff);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    /* Ensure buttons are square */
+    height: 50px;
+    /* Ensure buttons are square */
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-actions button:hover {
+    background: linear-gradient(to right, #6600ff, #ff0077);
+}
+
+.add-person-button {
+    margin-bottom: 20px;
+    width: 100%;
+    background: linear-gradient(to right, #ff0077, #6600ff);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    position: relative;
+    /* left: 400px; */
+    top: 12%;
+}
+
+
+.h2 {
+    display: inline;
+
+}
+
+.add-person-button:hover {
+    background: linear-gradient(to right, #6600ff, #ff0077);
+}
+
+.modal-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-row {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popup-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-button.add {
+    background-color: #9b59b6;
+}
+
+.popup-button.cancel {
+    background-color: #e91e63;
+}
+
+.popup-button.add:hover {
+    background-color: #8e44ad;
+}
+
+.popup-button.cancel:hover {
+    background-color: #c2185b;
+}
+
+
+
+
+
+
+
+.person-actions .dummy-image {
+    top: calc(50% - 80px);
+    /* Position the dummy image halfway between top and bottom of the card */
+    left: calc(50% - 40px);
+    /* Position the dummy image halfway between left and right of the card */
+    z-index: 1;
+    /* Ensure the dummy image is above the edit and delete buttons */
+}
+
+
+.person-actions img:hover {
+    filter: brightness(1.2);
+    /* Adjust brightness on hover for the pinkish to purplish effect */
+}
+
+
+.person-details {
+    padding-left: 20px;
+    /* Adjust padding as needed */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* Space between fields */
+}
+
+
+
+
+
+
+
+
+.add-person-button1 {
+    margin-bottom: 20px;
+    width: 20%;
+    background: linear-gradient(to right, #ff0077, #6600ff);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    display: inline;
+    position: relative;
+    left:40%;
+    top:1%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.person-actions .dummy-image {
+    top: calc(50% - 80px);
+    /* Position the dummy image halfway between top and bottom of the card */
+    left: calc(50% - 40px);
+    /* Position the dummy image halfway between left and right of the card */
+    z-index: 1;
+    /* Ensure the dummy image is above the edit and delete buttons */
+}
+
+.add-person-button {
+    margin-bottom: 20px;
+    width: 20%;
+    /* Stretch button width to match card width */
+    background: linear-gradient(to right, #ff0077, #6600ff);
+    /* Pinkish to purplish gradient */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    /* Add transition effect */
+    position: relative;
+    left: 400px;
+    top: 12%;
+    display: inline;
+}
+
+
+.h4 {
+    display: inline;
+
+}
+
+.add-person-button:hover {
+    background: linear-gradient(to right, #6600ff, #ff0077);
+    /* Reverse gradient on hover */
+}
+
+.startup-people-container {
+    width: 100%;
+}
+
+.dummy-image {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    /* Adjust the left position to your preference */
+    /* left: 50%; */
+    transform: translateY(-70%);
+
+    width: 100px;
+    /* Increase the width of the image */
+    height: 100px;
+    /* Increase the height of the image */
+    border-radius: 15px;
+    /* Add roundish edges by increasing the border-radius */
+    overflow: hidden;
+}
+
+.person-actions img {
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    /* Add transition effect */
+}
+
+.person-actions img:hover {
+    filter: brightness(1.2);
+    /* Adjust brightness on hover for the pinkish to purplish effect */
+}
+
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popup-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-button.add {
+    background-color: #9b59b6;
+    /* Purplish color */
+}
+
+.popup-button.cancel {
+    background-color: #e91e63;
+    /* Pinkish color */
+}
+
+.popup-button.add:hover {
+    background-color: #8e44ad;
+    /* Darker purplish color on hover */
+}
+
+.popup-button.cancel:hover {
+    background-color: #c2185b;
+    /* Darker pinkish color on hover */
+}
+
+

@@ -1,0 +1,523 @@
+/* Partners.css */
+
+/* General Layout */
+.broad-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Header and Dropdown */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .page-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .incubator-select {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    width: 500px;
+  }
+  
+  .programs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .incubator-section {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .incubator-header {
+    background: #673AB7;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .incubator-name {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .toggle-icon {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .programs-list {
+    padding: 15px;
+  }
+  
+  .program-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .program-row:last-child {
+    border-bottom: none;
+  }
+  
+  .program-info {
+    flex: 1;
+  }
+  
+  .program-name {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .program-date {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .program-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .details-btn, .apply-btn {
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .details-btn {
+    background: linear-gradient(to bottom, #ff0080, #7928ca); 
+    color: white;
+  }
+  
+  .apply-btn {
+    background: linear-gradient(to bottom, #ff0080, #7928ca); 
+    color: white;
+  }
+  
+  .apply-btn.submitted {
+    background: #gray;
+    cursor: not-allowed;
+  }
+  
+  /* Modal */
+  .ReactModal__Overlay {
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
+  
+  .ReactModal__Content {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  .ReactModal__Content h2 {
+    color: #6a0dad;
+    margin-bottom: 20px;
+  }
+  
+  /* Form and Buttons in Modal */
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6a0dad;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .buttons-container button {
+    padding: 10px 15px;
+    color: white;
+    background: #6a0dad;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .buttons-container button:hover {
+    background: #8a2be2;
+  }
+  .no-selection {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6a0dad;
+  }
+  /* Popups */
+  .popup-success,s
+  .popup-submit-confirmation {
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .popup-success {
+    background-color: #6a0dad;
+  }
+  
+  .popup-submit-confirmation {
+    background-color: #ff9800;
+    padding: 20px;
+  }
+  
+  .popup-submit-confirmation p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .program-name{
+    font-weight: bold;
+
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .close-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .close-icon:hover {
+    color: #666;
+  }
+  
+  .application-modal {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    color: #333;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .close-icon:hover {
+    color: #ddd;
+  }
+  
+  .application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #333;
+  }
+  
+  .form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .save-btn, .submit-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .save-btn {
+    background: linear-gradient(to right, #ff0077, #6600ff);
+    transition: background 0.3s ease, transform 0.2s ease;
+    color: white;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(to right, #ff0077, #6600ff);
+    transition: background 0.3s ease, transform 0.2s ease;
+    color: white;
+  }
+  
+  /* Popup Styles */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+  
+  .popup-content {
+    background: #DADDFB;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .popup-content.success {
+    background: #f8f9fa;
+  }
+  
+  .popup-content.warning {
+    background: #fff;
+  }
+  
+  .popup-icon {
+    font-size: 48px;
+    color:#DADDFB;
+    margin-bottom: 20px;
+  }
+  
+  .popup-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .confirm-btn, .cancel-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirm-btn {
+    background: linear-gradient(to right, #ff0077, #6600ff);
+    transition: background 0.3s ease, transform 0.2s ease;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background: linear-gradient(to right, #ff0077, #6600ff);
+    transition: background 0.3s ease, transform 0.2s ease;
+    color: white;
+  }
+  
+  /* Loading Styles */
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .application-modal {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .application-modal {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+  }
+
+  .modal-content {
+    position: relative;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .form-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+  }
+  .application-modal {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    margin: auto; /* Center the modal */
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }

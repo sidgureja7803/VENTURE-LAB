@@ -1,0 +1,49 @@
+/* index.css */
+
+/* Reset styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Page container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+add-edit-top-right-button {
+  /* background: linear-gradient(135deg, #ff69b4, #800080); */
+  background: linear-gradient(to right, #8a2be2, #ff1493);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  left: 45%;
+}
+
+.h2 {
+  display: inline;
+}

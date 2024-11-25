@@ -1,0 +1,230 @@
+/* Style for the container */
+.broad-container {
+    position: relative;
+    padding: 20px;
+}
+
+/* Style for the heading */
+.top-left-heading {
+    font-size: 24px;
+}
+
+/* Style for the header to align heading and filter */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the filter program */
+.filter-program {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Style for the select dropdown */
+#programDropdown {
+    width: auto;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #8A2BE2;
+    background: linear-gradient(to right, #8A2BE2, #FF1493);
+    color: white;
+    appearance: none;
+    background-color: #8A2BE2;
+    /* Style to make the text visible */
+}
+
+/* Style for the selected program text */
+.selected-program {
+    margin-left: 10px;
+    color: #8A2BE2;
+    font-weight: bold;
+}
+
+/* Style for the program heading */
+.program-heading {
+    background-color: #4b0082;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* Style for the card */
+.centre-card {
+    position: relative;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Align View Application button to the right within the card */
+.centre-card .view-application-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.centre-card .view-application-button:hover {
+    background-color: #a8247a;
+}
+
+/* Style for the modal */
+.modal-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal content styling */
+.ReactModal__Content {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #4b0082;
+}
+
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.application {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.application strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.modal-footer button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter {
+    background: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.program-section {
+    margin-bottom: 20px;
+}
+
+.program-header {
+    background: linear-gradient(to right, #8A2BE2, #9400D3);
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.arrow-icon {
+    margin-right: 10px;
+}
+
+.startup-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.startup-info {
+    margin-bottom: 15px;
+}
+
+.info-row {
+    margin-bottom: 8px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.view-application-btn {
+    background: #E91E63;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.view-application-btn:hover {
+    background: #D81B60;
+}
+
+.applications-container {
+    padding: 10px 0;
+}
+
+.no-applications {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 10px 0;
+}

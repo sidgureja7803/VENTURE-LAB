@@ -1,0 +1,430 @@
+
+
+
+ 
+.mainContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+ 
+  height: 100%;
+}
+
+
+
+.incubator-sidebar {
+  flex: 0 0 250px;
+    height: 100vh; 
+   width: 250px; 
+  /* Set a fixed width for the sidebar */
+  height: calc(100vh - 50px);
+  background-color: rgb(251, 251, 255); 
+  background-color: #eadafb;
+   position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+} 
+
+.sidebarWrapper {
+  padding: 10px; 
+  color: #555;
+   color:blueviolet; 
+  height: 100%;
+  /* Ensure sidebarWrapper takes full height */
+   display: flex; 
+  /* Use flexbox for layout */
+   flex-direction: column; 
+  /* Stack child elements vertically */
+   justify-content: space-between; 
+  /* Distribute space evenly between child elements */
+ }
+
+.sidebarMenu {
+  margin-bottom: 10px;
+}
+
+.sidebarTitle {
+  font-size: 13px;
+  color: rgb(187, 186, 186);
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0; 
+  /* Remove default padding */
+}
+
+.sidebarListItem {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover { 
+  background-color: rgb(240, 240, 255);
+   background-color: rgb(160, 35, 160); 
+}
+
+.sidebarIcon {
+  margin-right: 10px;
+}
+
+ 
+
+.mainContainer {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  /* Set width of sidebar */
+  height: calc(100vh - 50px);
+  background-color: #eadafb;
+  /* Light purplish background */
+  position: stiky;
+  top: 50px;
+  padding: 20px;
+}
+
+.sidebarWrapper {
+  color: #555;
+}
+
+.sidebarMenu { 
+  margin-bottom: 20px;
+  /* Increase spacing between menus */
+}
+
+.sidebarTitle {
+  font-size: 13px;
+  color: #bbb;
+  /* Adjust title color */
+  margin-bottom: 10px;
+  /* Add space below title */
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebarListItem {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: #fff;
+  /* Change hover effect color to white */
+}
+
+.sidebarIcon {
+  margin-right: 10px;
+  font-size: 20px !important;
+}
+
+.sidebarListItem {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: #fff;
+  /* Change hover effect color to white */
+}
+
+.sidebarIcon {
+  margin-right: 10px;
+  font-size: 20px !important;
+  padding: 8px;
+  border-radius: 50%;
+  /* Make icon container circular */
+  background-color: #fff;
+  /* White background for icon container */
+}
+
+
+.mainContainer {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  height: calc(100vh - 50px);
+  background-color: #eadafb;
+  position: sticky;
+  top: 50px;
+  padding: 20px;
+}
+
+.sidebarWrapper {
+  color: #555;
+}
+
+.sidebarMenu {
+  margin-bottom: 20px;
+}
+
+.sidebarTitle {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebarListItem {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: #fff;
+}
+
+.sidebarIcon {
+  margin-right: 10px;
+  font-size: 20px !important;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* New CSS class for keeping the clicked state */
+.sidebarListItem.active .sidebarIcon {
+  color: #d6336c;
+  /* Dark pinkish color for the icon */
+  background-color: #fff;
+  /* Optional: if you want to keep the background white */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.startup-sidebar {
+  flex: 0 0 250px;
+  height: 100vh;
+  background-color: #EADAFB I !important;
+  position: -webkit-sticky;
+  /* For Safari */
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  /* Make the sidebar content scrollable */
+}
+
+.sidebarWrapper {
+  color: #555;
+}
+
+.sidebar {
+  background-color: #EADAFB;
+}
+
+.sidebarMenu {
+  margin-bottom: 20px;
+}
+
+.sidebarTitle {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebarListItem {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: #fff;
+}
+
+.sidebarIcon {
+  margin-right: 10px;
+  font-size: 20px !important;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* For white square icon backgrounds */
+.sidebarIcon {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.sidebarListItem.active .sidebarIcon,
+.sidebarListItem:hover .sidebarIcon {
+  color: #d6336c;
+}
+
+
+.startup-sidebar {
+  background-color: #EADAFB;
+}
+
+
+
+.sidebarListItem {
+  padding: 10px;
+  margin-bottom: 5px;
+  /* Add margin-bottom for spacing between buttons */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: #fff;
+  /* Set background color to white for selected/hovered button */
+}
+
+
+
+
+
+
+.mainContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.incubator-sidebar {
+  flex: 0 0 250px;
+  height: 100vh;
+  background-color: #eadafb;
+  position: -webkit-sticky;
+  /* For Safari */
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  /* Make the sidebar content scrollable */
+}
+
+.incubatorWrapper {
+  color: #555;
+}
+
+.incubator {
+  background-color: #eadafb;
+}
+
+.incubatorMenu {
+  margin-bottom: 20px;
+}
+
+.incubatorTitle {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.incubatorList {
+  list-style: none;
+  padding: 0;
+}
+
+.incubatorListItem {
+  padding: 10px;
+  margin-bottom: 5px;
+  /* Add margin-bottom for spacing between buttons */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.incubatorListItem.active,
+.incubatorListItem:hover {
+  background-color: #fff;
+  /* Set background color to white for selected/hovered button */
+}
+
+.incubatorIcon {
+  margin-right: 10px;
+  font-size: 20px !important;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* For white square icon backgrounds */
+.incubatorIcon {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.sidebarListItem.active .sidebarIcon,
+.sidebarListItem:hover .sidebarIcon {
+  color: #d6336c;
+}

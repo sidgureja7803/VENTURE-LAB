@@ -1,0 +1,118 @@
+.page-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-section h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.add-info-btn {
+  background: linear-gradient(to bottom, #ff0080, #7928ca); 
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ip-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ip-card {
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+}
+
+.ip-info {
+  flex: 1;
+}
+
+.ip-row {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-weight: 500;
+  color: #333;
+  width: 120px;
+  font-weight: bold;
+}
+
+.value {
+  color: #666;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn:hover .edit-icon path,
+.delete-btn:hover .delete-icon path {
+  fill: #E91E63;
+}
+
+.edit-icon, .delete-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Modal styles remain the same */
+.save-btn, .cancel-btn{
+  background: linear-gradient(to right, #ff0077, #6600ff);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.error-input {
+  border: 1px solid #dc3545 !important;
+  background-color: #fff8f8;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.submit-error {
+  text-align: center;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #fff8f8;
+  border-radius: 4px;
+}
+
+.input-row {
+  margin-bottom: 15px;
+}

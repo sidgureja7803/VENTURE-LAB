@@ -1,0 +1,143 @@
+.topbar {
+  background: #DADDFB;
+  height: 70px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topbarWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.topLeft {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.topMiddle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboardTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin: 0;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+}
+
+.searchBar {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 6px 15px;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.searchIcon {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 10px;
+  font-size: 14px;
+  width: 200px;
+  color: #333333;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.userProfile:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.userImage {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.placeholderUserAvatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.userName {
+  font-weight: 500;
+  color: #333333;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: #555555;
+  cursor: pointer;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.logoInput, .userImageInput {
+  display: none;
+}

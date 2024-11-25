@@ -1,0 +1,371 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.login-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Login Wrapper */
+.login-wrapper {
+  display: flex;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 600px;
+}
+
+/* Left Container - Login Form */
+.left-container {
+  flex: 1;
+  padding: 2vh 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Right Container - Image */
+.right-container {
+  flex: 1;
+  background: linear-gradient(145deg, #2b2d42, #1a1b2e);
+  position: relative;
+  overflow: hidden;
+}
+
+.right-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form Elements */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+}
+
+.form-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2b2d42;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 1vh;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9vw;
+}
+
+.form-input input:focus {
+  border-color: #00D395;
+  box-shadow: 0 0 0 3px rgba(0, 211, 149, 0.1);
+  outline: none;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 1.2vh;
+  background: linear-gradient(to right, #ff0077, #6600ff);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1vw;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.login-button:active {
+  transform: translateY(1px);
+}
+
+/* Loading Animation */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #00D395;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: -400px;
+  padding: 16px 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease forwards;
+}
+
+.toast-container.error {
+  border-left: 4px solid #ff4d4f;
+}
+
+.toast-container.success {
+  border-left: 4px solid #52c41a;
+}
+
+@keyframes slideIn {
+  to { right: 20px; }
+}
+
+@keyframes slideOut {
+  from { right: 20px; }
+  to { right: -400px; }
+}
+
+/* Sign Up Link */
+.signup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #2b2d42;
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  color: #00D395;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .login-wrapper {
+    width: 95%;
+    min-height: auto;
+  }
+  
+  .left-container {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .right-container {
+    display: none;
+  }
+
+  .left-container {
+    padding: 2rem;
+  }
+
+  .login-form {
+    max-width: 100%;
+  }
+}
+
+/* Add these styles to your existing Login.css */
+
+.login-header {
+  margin-bottom: 2vh;
+}
+
+.login-title {
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: #02042B;
+  margin-bottom: 1vh;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.login-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #00D395, #00A3B4);
+  border-radius: 2px;
+}
+
+.login-subtitle {
+  font-size: 1.2vw;
+  color: #666;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+/* Optional: Add animation */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.login-header {
+  animation: slideInFromTop 0.5s ease-out forwards;
+}
+
+/* Optional: Add gradient text effect */
+.login-title span {
+  background: linear-gradient(135deg, #02042B 0%, #1a1b2e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-title {
+    font-size: 2rem;
+  }
+  
+  .login-subtitle {
+    font-size: 1rem;
+  }
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.venture-logo {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.success-popup {
+  background: white;
+  padding: 30px 50px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.3s ease-out;
+}
+
+.success-icon {
+  margin-bottom: 20px;
+  animation: scaleIn 0.5s ease-out;
+}
+
+.success-popup h2 {
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.success-popup p {
+  color: #666;
+  margin: 0;
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
